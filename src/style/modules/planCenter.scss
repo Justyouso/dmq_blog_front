@@ -1,0 +1,38 @@
+.plan-form-wrap {
+    padding: 20px;
+    .form-title {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 10px;
+        .text {
+            cursor: pointer;
+            i {
+                color: #999;
+                margin-left: 4px;
+                transition: all .5s;
+            }
+            &.hide {
+                i {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        .subText {
+            font-size: 12px;
+            color: #999;
+            margin-left: 20px;
+        }
+    }
+    .sub-title {
+        color: #666666;
+        font-size: 14px;
+        line-height: 60px;
+        .text {
+            margin-right: 20px;
+        }
+    }
+    .plan-submit-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

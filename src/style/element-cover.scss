@@ -1,0 +1,55 @@
+/******** 覆盖elementui的样式**********/
+
+// 登录页表单input样式
+.module-login {
+    .el-form-item {
+        margin-bottom: 24px;
+    }
+    .el-input {
+        height: 44px;
+        .el-input__inner {
+            border-radius: 0;
+            border: solid 1px #cccccc;
+            color: #333;
+            height: 44px;
+            &:-webkit-autofill {
+                box-shadow: 0 0 0px 1000px #fff inset !important;
+                -webkit-text-fill-color: #333 !important;
+            }
+        }
+    }
+}
+
+// 重置 table 样式
+.el-table {
+    margin-top: 0!important;
+    font-size: 15px!important;
+    color: #333!important;
+    th {
+        background-color: #f4f5f7;
+    }
+    th,
+    td {
+        vertical-align: top;
+    }
+    tr:hover>td {
+        background-color: transparent !important;
+    }
+}
+
+// 重置全局checkbox样式
+.el-checkbox__inner {
+    width: 16px;
+    height: 16px;
+    &::after {
+        width: 4px;
+        height: 8px;
+        left: 5px;
+        top: 1px;
+    }
+}
+
+// 重置全局loading 样式
+.el-loading-mask {
+    background-color: #fff;
+}

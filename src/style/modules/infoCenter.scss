@@ -1,0 +1,92 @@
+.article-table {
+    &-handle {
+        width: 100%;
+        padding: 20px 30px;
+        border-bottom: 1px solid #ECECEC;
+        background-color: #fff;
+        @include flex-base(space-between);
+        .handle-right {
+            line-height: 32px;
+        }
+    }
+}
+
+.count-wrap {
+    padding: 20px 30px;
+    background-color: #fff;
+    &-item {
+        position: relative;
+        min-height: 360px;
+        border: 1px solid #ECECEC;
+    }
+    .article-sentiment-count {
+        padding: 0 20px;
+        &-item {
+            height: 64px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 30px;
+            border-radius: 4px;
+            p {
+                &:last-child {
+                    font-size: 20px;
+                }
+            }
+        }
+        .increment-class {
+            text-align: center;
+            line-height: 30px;
+            margin-bottom: 20px;
+            font-size: 22px;
+            i {
+                color: $primary;
+            }
+        }
+        .plan-item-class {
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 18px;
+            margin-right: 20px;
+            i {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.article-detail {
+    background-color: #fff;
+    border-top: 1px solid #eeeeee;
+    padding: 20px;
+    &-title {
+        font-size: 30px;
+        color: #333;
+        text-align: center;
+        line-height: 100px;
+    }
+    &-des {
+        font-size: 16px;
+        color: #333;
+        text-align: center;
+        margin-bottom: 30px;
+        span {
+            margin: 0 16px;
+            a {
+                color: $primary;
+                cursor: pointer;
+            }
+        }
+    }
+    &-summary {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    &-content {
+        font-size: 18px;
+        line-height: 40px;
+        text-indent: 35px;
+    }
+    &-similarList {
+        border-left: 1px solid #eeeeee;
+    }
+}

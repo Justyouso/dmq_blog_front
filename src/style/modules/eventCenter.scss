@@ -1,0 +1,45 @@
+.event-detail-wrap {
+    .back-handle {
+        width: 100%;
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 20px;
+        .time {
+            font-size: 13px;
+            color: #999;
+        }
+    }
+    &-item {
+        position: relative;
+        background-color: #fff;
+        margin-bottom: 20px;
+        padding: 20px;
+        min-height: 140px;
+        &.chart {
+            min-height: 330px;
+            padding: 0;
+        }
+        .summary {
+            font-size: 14px;
+            color: #6D6D6D;
+            line-height: 18px;
+        }
+        .influence-group {
+            @include flex-base(left);
+            &-icon {
+                text-align: center;
+                margin: 20px;
+            }
+            &-tag {
+                span {
+                    padding: 5px 10px;
+                    border-radius: 20px;
+                    margin-bottom: 10px;
+                    &+span {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

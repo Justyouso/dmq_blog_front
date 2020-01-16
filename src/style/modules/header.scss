@@ -1,0 +1,124 @@
+nav {
+    height: 80px;
+    .navber {
+      border-bottom:1px solid #C0C0C0;
+      .el-row {
+        margin-bottom: 56px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .el-col {
+        border-radius: 4px;
+      }
+      .grid-content {
+        border-radius: 4px;
+        min-height: 56px;
+      }
+      .logo {
+        width: 50px;
+        height: 56px;
+        text-align: center;
+        margin-left: 100px;
+        padding: 13px 0;
+        a {
+          font-size: 24px;
+        }
+      }
+      .menu-bar {
+          li {
+              float: left;
+              margin-right: 50px;
+              margin-left: 50px;
+              padding-top: 20px;
+              a {
+                  display: block;
+                  font-size: 18px;
+                  position: relative;
+                  &.active-class {
+                      color: $primary;
+                  }
+              }
+          }
+      }
+      .el_search {
+        padding-top: 14px;
+      }
+      .logo-bar {
+          li {
+              float: left;
+              margin-left: 180px;
+              padding-top: 20px;
+              a {
+                  display: block;
+                  font-size: 18px;
+                  position: relative;
+                  &.active-class {
+                      color: $primary;
+                  }
+              }
+          }
+      }
+      .article {
+        width: 80px;
+        height: 56px;
+        text-align: center;
+        margin-left: 100px;
+        padding: 20px 0;
+        display: inline-block;
+        a{  
+            font-size: 18px;
+        }
+      }
+      .user-bar {
+        float: right;
+        width: 80px;
+        height: 56px;
+        margin-right: 200px;
+        // position: relative;
+        // margin-left: 20px;
+        .user-name {
+            cursor: pointer;
+            padding-top:20px;
+            
+            .name {
+              font-size: 18px;
+                // margin-left: 10px;
+            }
+        }
+        .user-sub {
+            display: none;
+            position: relative;
+            // top: 70px;
+            right: 20px;
+            width: 120px;
+            padding: 10px 0;
+            background: #fff;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            text-align: center;
+            li {
+                color: #525266;
+                line-height: 36px;
+                a {
+                    display: block;
+                    font-size: 10px;
+                    &:hover {
+                        color: $primary;
+                        background: #e5f2fc;
+                    }
+                }
+            }
+        }
+        &:hover {
+            // .user-name {
+            //     color: $primary;
+            // }
+            .user-sub {
+                display: block;
+                z-index: 9;
+            }
+        }
+      }
+    }
+}

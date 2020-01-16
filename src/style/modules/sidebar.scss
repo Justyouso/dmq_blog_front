@@ -1,0 +1,45 @@
+.module-side {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    width: 200px;
+    height: 100%;
+    color: #fff;
+    background: #0d0d2b;
+    font-size: 14px;
+    z-index: 98;
+    .editBtn-bar {
+        width: 100%;
+        height: 50px;
+        @include flex-base(center);
+    }
+    .handle-bar {
+        li {
+            color: #fff;
+            line-height: 50px;
+            padding: 0 50px 0 10px;
+            position: relative;
+            &.active-class {
+                background: url(../assets/image/avtive-bg.png) no-repeat;
+            }
+            p {
+                padding-left: 15px;
+                cursor: pointer;
+                // &:hover {
+                //     color: $primary;
+                // }
+            }
+            .delete-btn {
+                position: absolute;
+                right: 0;
+                top: 0;
+                width: 50px;
+                line-height: 30px;
+                text-align: center;
+                color: $primary;
+                cursor: pointer;
+            }
+        }
+    }
+}

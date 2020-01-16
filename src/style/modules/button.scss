@@ -1,0 +1,65 @@
+@mixin class-button($bg, $text, $border) {
+    display: inline-block;
+    line-height: 20px;
+    white-space: nowrap;
+    cursor: pointer;
+    -webkit-appearance: none;
+    text-align: center;
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+    padding: 4px 14px;
+    font-size: 14px;
+    background-color: $bg;
+    color: $text;
+    border: 1px solid $border;
+    &:active {
+        opacity: .8;
+    }
+}
+
+.primary-btn {
+    @include class-button($primary, #fff, $primary);
+}
+
+.plain-btn {
+    @include class-button(#fff, $primary, $primary);
+}
+
+.disabled-btn {
+    @include class-button(#fff, #757575, #757575);
+}
+
+.negative {
+    border: 1px solid #F0B8AD;
+    background: #FFF6F5;
+    color: $is_negative;
+}
+
+.neutral {
+    border: 1px solid #F3D576;
+    background: #FFF9E7;
+    color: $is_neutral;
+}
+
+.positive {
+    border: 1px solid #B7DAB1;
+    background: #F4FFF2;
+    color: $is_positive;
+}
+
+.back-btn {
+    color: $primary;
+    cursor: pointer;
+    margin-right: 16px;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: '';
+        top: 4px;
+        right: -10px;
+        width: 1px;
+        height: 16px;
+        background-color: #ccc;
+    }
+}
